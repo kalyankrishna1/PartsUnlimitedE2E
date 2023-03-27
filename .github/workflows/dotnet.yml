@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./PartsUnlimited-aspnet45/PartsUnlimited.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore ./PartsUnlimited-aspnet45/PartsUnlimited.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal ./PartsUnlimited-aspnet45/PartsUnlimited.sln
